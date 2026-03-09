@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import React from 'react';
+
+import { CakeView } from "./features/cake/CakeView";
+import { IceCreamView } from "./features/iceCream/IceCreamView";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-      <h1>Vite + React</h1>
-  )
+    <>
+      <CakeView />
+      <IceCreamView />
+    </>
+  );
 }
 
-export default App
+export default App;
