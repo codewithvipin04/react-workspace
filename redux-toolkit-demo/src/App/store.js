@@ -1,11 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import cakeSlice from "../features/cake/cakeSlice";
-import iceCreamSlice from '../features/iceCream/iceCreamSlice';
-
+import cakeReducer from "../features/cake/cakeSlice";
+import iceCreamReducer from '../features/iceCream/iceCreamSlice';
+import userReducer from '../features/user/userSlice'
 export const store = configureStore({
   reducer: {
-    cake: cakeSlice,
-    iceCream: iceCreamSlice,
+    cake: cakeReducer,
+    iceCream: iceCreamReducer,
+    user: userReducer
   },
 });
