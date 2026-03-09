@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from "react-redux";
 
-import { ordered, restocked } from './cakeSlice';
+import { ordered, restocked } from "./cakeSlice";
 
 export const CakeView = () => {
   const numberOfCakes = useSelector((state) => state.cake.numberOfCakes);
