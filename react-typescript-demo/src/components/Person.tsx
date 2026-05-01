@@ -1,11 +1,6 @@
-type Person = {
-    name : {
-       first: string,
-       last: string
-    }
-}
+import type { PersonProps } from "./Person.types";
 
-export const Person = (props: Person) => {
+export const Person = (props: PersonProps) => {
     return(
         <>
         <h3>{`FirstName: ${props.name.first}`}</h3>
